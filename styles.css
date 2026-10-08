@@ -638,6 +638,7 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 15%;
   display: block;
   transition: transform var(--transition-smooth);
 }
@@ -920,13 +921,6 @@ section {
   border-color: var(--accent-primary);
   color: var(--text-heading);
   transform: translateY(-2px);
-}
-
-.tech-chip.featured {
-  background: rgba(99, 102, 241, 0.12);
-  border-color: rgba(99, 102, 241, 0.35);
-  color: var(--accent-primary);
-  font-weight: 600;
 }
 
 /* ==========================================================================
@@ -1225,7 +1219,8 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
-  margin-bottom: 24px;
+  margin-top: auto;
+  margin-bottom: 0;
 }
 
 .project-actions {
@@ -1758,23 +1753,14 @@ section {
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  text-align: center;
 }
 
 .footer-copy {
   font-size: 0.88rem;
   color: var(--text-muted);
-}
-
-.footer-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.82rem;
-  color: var(--text-secondary);
 }
 
 /* Floating Back to Top Button */
